@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>Sign Up</title>
+   <meta charset="utf-8" />
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="/Assets/css/HeaderFooter.css">
+   <link rel="stylesheet" href="/Assets/css/signup.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html"><img src="/Assets/img/addtocart logo.jpg" alt="cart" /></a> <span class="cartnum">0</span>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="navbarbutton">
+                    <li><a href="/HTML/products.html">Products</a></li> 
+                  </button>
+
+                  <div class="dropdown-content">
+                    <ul>
+                      <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                      <li><a href="Shoes(M).html">Men</a></li>
+                      <li><a href="Shoes(W).html">Women</a></li>
+                      <li><a href="Shoes(K).html">Kids</a></li>
+                    </ul>
+                    <ul>
+                      <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                      <li><a href="/HTML/mclothing.html">Men</a></li>
+                      <li><a href="/HTML/wclothing.html">Women</a></li>
+                      <li><a href="/HTML/kclothing.html">Kids</a></li>
+                    </ul>
+                  <ul>
+                    <h4><a href="/HTML/Accessories.html" style="padding: 1px;">Accessories</a></h4>
+                </ul>
+                </div>
+              </div>
+            <li><a href="/HTML/promotion.html">Promotion</a></li>
+            <li><a href="/HTML/membership.html">Membership</a></li>
+          </ul>
+      </div>
+    </nav>
+    </header>
+
+    
+
+
+  <!--FORM-->
+  <div class="wrapper">
+    <h1 style="font-size:1.5vw">Sign Up</h1>
+
+    <form action="/action_page.php">
+      <input type = "text" placeholder="Name" id = "name" required="">
+      <input type = "email" placeholder="Email" id="email" required="">
+
+      <div style = "display:flex;align-items:top;justify-content: right;">
+        <input type = "password" name = "password" autocapitalise="none" placeholder="Password" id="password" required="">
+        <span class="eye" onclick="eyeFunction1()">
+          <i id="hide" class="fa fa-eye" onclick="toggleFunction(this)" ></i>
+        </span>
+      </div>
+      <div style = "display:flex;align-items:top;justify-content: right;">
+        <input type = "password" placeholder="Confirm Password" id="confirmpassword">
+        <span class="eye" onclick="eyeFunction2()"> 
+          <i id="hide" class="fa fa-eye" onclick="toggleFunction(this)" ></i>
+        </span>
+      </div>
+    </form>
+
+    <!--PASSWORD MSG-->
+    <div id="message">
+      <h3 style="font-size: 1vw;">Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+
+    <!--VALIDATION CHECK-->
+    <script>
+       
+        var myInput = document.getElementById("password");
+        var myInput1 = document.getElementById("confirmpassword");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+        var x = document.getElementById("hide1");
+        var y = document.getElementById("hide2");
+        var x2 = document.getElementById("hide3");
+        var y2 = document.getElementById("hide4");
+        
+        function eyeFunction1() {
+            var pass = document.getElementById("password"); 
+            if (pass.type === "password") { //If the type of password is password
+              pass.type = "text";
+              
+            } else { //If the type of password is text
+              pass.type = "password";
+            }
+          }
+
+          function eyeFunction2() {
+            var pass = document.getElementById("confirmpassword"); 
+            if (pass.type === "password") { //If the type of password is password
+              pass.type = "text";
+              
+            } else { //If the type of password is text
+              pass.type = "password";
+            }
+          }
+
+        function toggleFunction(p) {
+          p.classList.toggle('fa-eye-slash');
+        }
+    
+  
+        // When the user clicks on the password field, show the message box
+        myInput.onfocus = function() {
+          document.getElementById("message").style.display = "block";
+        }
+  
+        // When the user clicks outside of the password field, hide the message box
+        myInput.onblur = function() {
+          document.getElementById("message").style.display = "none";
+        }
+  
+        // When the user starts to type something inside the password field
+        myInput.onkeyup = function() {
+          // Validate lowercase letters
+          var lowerCaseLetters = /[a-z]/g;
+          if(myInput.value.match(lowerCaseLetters)) {  
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
+          } else {
+            letter.classList.remove("valid");
+            letter.classList.add("invalid");
+          }
+          
+          // Validate capital letters
+          var upperCaseLetters = /[A-Z]/g;
+          if(myInput.value.match(upperCaseLetters)) {  
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
+          } else {
+            capital.classList.remove("valid");
+            capital.classList.add("invalid");
+          }
+  
+          // Validate numbers
+          var numbers = /[0-9]/g;
+          if(myInput.value.match(numbers)) {  
+            number.classList.remove("invalid");
+            number.classList.add("valid");
+          } else {
+            number.classList.remove("valid");
+            number.classList.add("invalid");
+          }
+          
+          // Validate length
+          if(myInput.value.length >= 8) {
+            length.classList.remove("invalid");
+            length.classList.add("valid");
+          } else {
+            length.classList.remove("valid");
+            length.classList.add("invalid");
+          }
+
+        }
+    </script>
+  
+
+    <!--DOB-->
+    <h4>Date of Birth</h4>
+    <div class="DOB">
+      <div class="date">
+        <select id="date">
+          <option value="date">date</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          
+        </select>
+      </div>
+
+      <div class="month">
+        <select id="month">
+          <option value="month">month</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+
+      <div class="year">
+        <select id="year">
+          <option value="year">year</option>
+          <option value="1980">1980</option>
+          <option value="1981">1981</option>
+          <option value="1982">1982</option>
+          <option value="1983">1983</option>
+          <option value="1984">1984</option>
+          <option value="1985">1985</option>
+          <option value="1986">1986</option>
+          <option value="1987">1987</option>
+          <option value="1988">1988</option>
+          <option value="1989">1989</option>
+          <option value="1990">1990</option>
+          <option value="1991">1991</option>
+          <option value="1992">1992</option>
+          <option value="1993">1993</option>
+          <option value="1994">1994</option>
+          <option value="1995">1995</option>
+          <option value="1996">1996</option>
+          <option value="1997">1997</option>
+          <option value="1998">1998</option>
+          <option value="1999">1999</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+        </select>
+      </div>
+  
+    </div>
+
+    
+    <!--TNC-->
+    <br>
+    <div class="check">
+      <div style = "display:flex;align-items:center">
+        <input type="checkbox" name="agree" id="agree">
+      <label for="agree" class = "tnc">I have read and accepted <a class = "terms" href="/HTML/terms&conditions.html"><u>Terms & Conditions</u></a> and the SportoSense Privacy Policy.</label>
+      </div>
+    </div>
+
+    <!--REGISTER BUTTON-->
+    <div class="reg-btn">
+      <button class = "button" onclick= "myFunction()"><b>Register</b></button>
+    </div>
+
+  </div>
+
+
+   
+  <footer>
+    <img src="/Assets/img/social media icon.png" alt="social_media" usemap="#mediamap" />
+    <map id="mediamap" name="mediamap">
+      <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+      <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="instagram" />
+      <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snapchat" />
+      <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+      <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp"/>
+      <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin"/>
+    </map>
+    <div class="contact">
+      <br>
+      Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+      </div>
+      <br>
+      <br>
+      SportoSense &copy; All rights reserved
+      <br><br>
+  </footer>
+
+
+  <script>
+    function myFunction() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      if(name === "chiuyi" && email === "chiuyisoh@gmail.com" && password === "Chiuyi1234567") {
+        window.location. href="/HTML/loginpage.html"
+        alert("Sign up successful. Welcome to SportoSense!");
+      }
+
+      else {
+        alert ("Please make sure all the fields are filled.")
+        return false;
+      }
+    }
+    </script>
+  </body>
+</html>
+    

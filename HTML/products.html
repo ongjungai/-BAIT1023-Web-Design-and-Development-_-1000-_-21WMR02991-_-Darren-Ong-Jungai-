@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+  <link rel="stylesheet" href="/Assets/css/product.css">
+</head>
+
+<body>
+   <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html"><img src="/Assets/img/addtocart logo.jpg" alt="cart" /><span class="cartnum">0</span></a>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="/HTML/index.html">Home</a></li>
+          <li><a href="/HTML/aboutus.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropdownbutton">
+                  <li><a href="/HTML/products.html">Products</a></li> 
+                </button>
+                <div class="dropdown-content">
+                  <ul>
+                    <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                    <li><a href="/HTML/ShoesP1(M).html">Men</a></li>
+                    <li><a href="/HTML/ShoesP1(W).html">Women</a></li>
+                    <li><a href="/HTML/ShoesP1(K).html">Kids</a></li>
+                  </ul>
+                  <ul>
+                    <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                    <li><a href="/HTML/mclothing.html">Men</a></li>
+                    <li><a href="/HTML/wclothing.html">Women</a></li>
+                    <li><a href="/HTML/kclothing.html">Kids</a></li>
+                  </ul>
+                <ul>
+                  <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+              </ul>
+              </div>
+            </div>
+          <li><a href="/HTML/Promotion.html">Promotion</a></li>
+          <li><a href="/HTML/Membership.html">Membership</a></li>
+        </ul>
+    </div>
+    </nav>
+    
+  </header>
+
+    <section id="intro">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="/Assets/img/adidas-banner-1.jpg" style="width: 100%; height: 500px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/Assets/img/adidas-banner-2.jpg" style="width: 100%; height: 500px;">
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="/Assets/img/adidas-banner-3.jpg" style="width:100%; height: 500px;">
+              
+            </div>
+            
+            <div class="mySlides fade">
+                
+                <img src="/Assets/img/adidas-banner-4.jpg" style="width:100%; height: 500px;">
+                
+            </div>
+
+            <div class="mySlides fade">
+              <img src="/Assets/img/adidas-banner-5.jpg" style="width:100%; height: 500px;">
+            </div>
+        </div>
+        <h1>Video</h1>
+        <aside> 
+          
+          <div class="promo_vid">
+            <video width="70%" height="50%" controls muted>
+              <source src="/Assets/videos/adidas Originals _ End Plastic Waste _ STAN SMITH, FOREVER.mp4" type="video/mp4">
+            </video>
+          </div>
+          
+        </aside>   
+        <h1>What are you looking for?</h1>
+        <div class="flex-container">
+          <div>
+            <div class="container">
+              <img src="/Assets/img/product shoes hover.jpg" style="width: 300px; height:300px" alt="zoom hover" class="image">
+              <div class="overlay">
+              
+                <div class="text"><a href="Shoes.html">Shoes</a></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container">
+              <a href="Clothing.html"><img src="/Assets/img/product clothing hover.jpg" style="width:300px; height:300px" alt="zoom hover" class="image"></a>
+              <div class="overlay">
+                
+                <div class="text"><a href="Accessories.html">Clothing</a></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container">
+              <img src="/Assets/img/product accessories hover.jpg" style="width:300px; height:300px" alt="zoom hover" class="image">
+              <div class="overlay">
+                
+                <div class="text"><a href="Accessories.html">Accessories</a></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+        
+
+      </section>
+      <footer>
+        <img src="/Assets/img/social media icon.png" alt="social_media" usemap="#mediamap" />
+        <map id="mediamap" name="mediamap">
+          <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="#" />
+          <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="#" />
+          <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="#" />
+          <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="#" />
+          <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="#" />
+          <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="#" />
+        </map>
+        <div class="contact">
+          <br>
+          Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+          </div>
+          <br>
+          <br>
+          SportoSense &copy; All rights reserved
+          <br><br>
+      </footer>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+          
+      function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          
+          slides[slideIndex-1].style.display = "block";  
+          
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+</body>
+
+</html>

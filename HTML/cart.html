@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>Cart</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8" />
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="/Assets/css/layout (1).css">
+   <link rel="stylesheet" href="/HeaderFooter/HeaderFooter.css">
+  <link rel="stylesheet" href="/Assets/css/cart.css">
+
+   
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="loginpage.html">Login</a> | <a href="SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="cart.html"><img src="/Assets/img/AboutUs/addtocart logo.jpg" alt="cart" />          
+        <span class="cartnum">0</span>
+        </a>
+        <a href="wishlist.html"><img src="/Assets/img/AboutUs/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="dropdownbutton">
+                    <li><a href="products.html">Products</a></li> 
+                  </button>
+                  <div class="dropdown-content">
+                      <ul>
+                        <h4><a href="shoe.html">Shoes</h4>
+                        <li><a href="ShoesP1(K).html">Men</a></li>
+                        <li><a href="ShoesP1(M).html">Women</a></li>
+                        <li><a href="ShoesP1(W).html">Kids</a></li>
+                      </ul>
+                      <ul>
+                        <h4><a href="clothing.html">Clothing</h4>
+                        <li><a href="mclothing.html">Men</a></li>
+                        <li><a href="wclothing.html">Women</a></li>
+                        <li><a href="kclothing.html">Kids</a></li>
+                      </ul>
+                    <ul>
+                      <h4><a href="Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                  </ul>
+                  </div>
+              </div>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+      </div>
+  </nav>
+    
+    </header>
+
+ <!-- Cart Summary and details -->
+<div class="cartWrapper">
+    <br><br>
+    <h1>Shopping Cart:</h1>
+    <br>
+
+    <table class="products-container">
+      <tr class="product-header">
+          <td class="productimg"></td>
+          <th colspan="2" style="width:100px;">Item</th>
+          <th data-label="price">Price</th>
+          <th data-label="qty"style="width:30px;">Quantity</th>
+          <th data-label="totalPrice">Total</th>
+          <th data-label="removeBtn"></th>
+      </tr>
+  </table>
+  <table class="products">
+  </table>
+
+    <div class="cartSummary">
+        <div class="summaryTitle">
+            <h1>Summary</h1>
+        </div>
+        <div class="orderValue">
+            <span class="summaryLabel">Subtotal</span>
+
+        </div>
+        <div class="deliveryFee">
+            <span class="summaryLabel">Shipping Fee</span>
+            <span class="summaryPrices">RM10</span>
+        </div>
+        <div class="subtotal">
+            <span class="summaryLabel">Total</span>
+        </div>
+
+
+        
+    <button class="checkout" onclick='location.href="checkout.html"'>Checkout</button>
+  </div>
+
+<script src="/Assets/javascript/addToCart.js"></script>
+
+
+   
+<footer>
+  <img src="/Assets/img/AboutUs/social media icon.png" alt="social_media" usemap="#mediamap" />
+  <map id="mediamap" name="mediamap">
+    <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+    <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="insta" />
+    <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snap" />
+    <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+    <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp" />
+    <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin" />
+  </map>
+  <div class="contact">
+    <br>
+    Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+    </div>
+    <br>
+    <br>
+    SportoSense &copy; All rights reserved
+    <br><br>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

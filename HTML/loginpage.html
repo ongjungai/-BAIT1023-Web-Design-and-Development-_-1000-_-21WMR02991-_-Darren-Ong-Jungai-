@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>SportoSense</title>
+   <meta charset="utf-8" />
+   <link rel="icon" type="jpeg" href="">
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="/Assets/css/loginpage.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html">
+          <img src="/Assets/img/addtocart logo.jpg" alt="cart" />
+          <span class="cartnum">0</span>
+        </a>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="button">
+                    <li><a href="/HTML/products.html">Products</a></li> 
+                  </button>
+                  <div class="dropdown-content">
+                      <ul>
+                        <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                        <li><a href="/HTML/ShoesP1(M).html">Men</a></li>
+                        <li><a href="/HTML/ShoesP1(W).html">Women</a></li>
+                        <li><a href="/HTML/ShoesP1(K).html">Kids</a></li>
+                      </ul>
+                      <ul>
+                        <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                        <li><a href="/HTML/mclothing.html">Men</a></li>
+                        <li><a href="/HTML/wclothing.html">Women</a></li>
+                        <li><a href="/HTML/kclothing.html">Kids</a></li>
+                      </ul>
+                    <ul>
+                      <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                  </ul>
+                  </div>
+              </div>
+            <li><a href="/HTML/promotion.html">Promotion</a></li>
+            <li><a href="/HTML/membership.html">Membership</a></li>
+          </ul>
+      </div>
+    </nav>
+    </header>
+    <h2>Member Login</h2>
+
+<form action="/HTML/index.html">
+  <div class="imgcontainer">
+    <img src="/Assets/img/avatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="username"><b>Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password:</b></label>
+    <input 
+    type="password"
+    id="InputPassword" 
+    placeholder="Enter Password" 
+    name="password" 
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+    required>
+    <span class="eye" onclick="eyeFunction()">
+    <i id="hide" class="fa fa-eye" onclick="toggleFunction(this)" ></i>
+    </span>  
+    <button type="submit" class="loginbutton">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+</form>
+   
+<footer>
+  <img src="/Assets/img/social media icon.png" alt="social_media" usemap="#mediamap" />
+  <map id="mediamap" name="mediamap">
+    <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+    <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="insta" />
+    <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snap" />
+    <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+    <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp" />
+    <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin" />
+  </map>
+  <div class="contact">
+    <br>
+    Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="/HTML/FAQ.html">FAQ</a>
+    </div>
+    <br>
+    <br>
+    SportoSense &copy; All rights reserved
+    <br><br>
+</footer>
+
+  <script src="/Assets/javascript/login.js"></script>
+</body>
+</html>

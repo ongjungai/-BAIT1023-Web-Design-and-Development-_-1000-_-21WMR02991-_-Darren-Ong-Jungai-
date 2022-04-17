@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>Kids Clothing</title>
+   <meta charset="utf-8" />
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/Assets/css/layout(clothing).css">
+</head>
+
+<body>
+  <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html"><img src="/Assets/img/addtocart logo.jpg" alt="cart" /><span class="cartnum">0</span></a>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="/HTML/index.html">Home</a></li>
+          <li><a href="/HTML/aboutus.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropdownbutton">
+                  <li><a href="/HTML/products.html">Products</a></li> 
+                </button>
+                <div class="dropdown-content">
+                  <ul>
+                    <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                    <li><a href="/HTML/ShoesP1(M).html">Men</a></li>
+                    <li><a href="/HTML/ShoesP1(W).html">Women</a></li>
+                    <li><a href="/HTML/ShoesP1(K).html">Kids</a></li>
+                  </ul>
+                  <ul>
+                    <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                    <li><a href="/HTML/mclothing.html">Men</a></li>
+                    <li><a href="/HTML/wclothing.html">Women</a></li>
+                    <li><a href="/HTML/kclothing.html">Kids</a></li>
+                  </ul>
+                <ul>
+                  <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+              </ul>
+              </div>
+            </div>
+          <li><a href="/HTML/Promotion.html">Promotion</a></li>
+          <li><a href="/HTML/Membership.html">Membership</a></li>
+        </ul>
+    </div>
+    </nav>
+    </header>
+
+    
+    
+    <table>
+      <h1>Clothing Kids:</h1>
+      <tr>
+          <td>
+            <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-1.webp" alt="TREFOIL TEE">
+            <div class="title"><p>TREFOIL TEE</p></div>
+            <div class="price"><p><br>RM129</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                    <select id="size" name="clothingsize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="116">116</option>
+                      <option value="122">122</option>
+                      <option value="128">128</option>
+                      <option value="134">134</option>
+                      <option value="140">140</option>
+                      <option value="146">146</option>
+                      <option value="152">152</option>
+                      
+                    </select>
+                
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+          </td>
+          <td>
+            <div class="container">
+              <button type="button" class="collapsible">
+              <img src="/Assets/img/Clothing(K)/kids-2.webp" 
+              alt="DISNEY MICKEY AND FRIENDS TEE" >
+              <div class="title"><p>DISNEY MICKEY AND FRIENDS TEE</p></div>
+              <div class="price"><p><br>RM149</p><br></div>
+              </button>
+                <div class="content">
+                    <div>
+                      <form>
+                        <label><br>Size:</label>
+                        <select id="size" name="clothingsize" style="width: 100%;" required>
+                          <option value="">--Please Select--</option>
+                          <option value="116">116</option>
+                          <option value="122">122</option>
+                          <option value="128">128</option>
+                          <option value="134">134</option>
+                          <option value="140">140</option>
+                          <option value="146">146</option>
+                          <option value="152">152</option>
+                          
+                        </select>
+                    
+                  <div>
+                    <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                  </div><br>
+                  </form>
+                </div>
+                </div>
+              </div>
+          </td>
+          <td>
+            <div class="container">
+              <button type="button" class="collapsible">
+              <img src="/Assets/img/Clothing(K)/kids-3.jpg" alt="DISNEY MICKEY MOUSE SUMMER SET">
+              <div class="title"><p>DISNEY MICKEY MOUSE SUMMER <br/> SET</p></div>
+              <div class="price"><p>RM159</p><br></div>
+              </button>
+              <div class="content">
+                <div>
+                  <form>
+                    <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                  <div>
+                    <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                  </div><br>
+                  </form>
+                </div>
+              </div>       
+          </div>
+          </td>
+          <td>
+            <div class="container">
+              <button type="button" class="collapsible">
+              <img src="/Assets/img/Clothing(K)/kids-4.webp" alt="ADIDAS X CLASSIC LEGO® TRACK SUIT">
+              <div class="title"><p>ADIDAS X CLASSIC LEGO® TRACK <br/> SUIT</p></div>
+              <div class="price"><p>RM179</p><br></div>
+              </button>
+              <div class="content">
+                <div>
+                  <form>
+                    <label><br>Size:</label>
+                    <select id="size" name="clothingsize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="116">116</option>
+                      <option value="122">122</option>
+                      <option value="128">128</option>
+                      <option value="134">134</option>
+                      <option value="140">140</option>
+                      <option value="146">146</option>
+                      <option value="152">152</option>
+                      
+                    </select>
+                
+                  <div>
+                    <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                  </div><br>
+                  </form>
+                </div>
+              </div>       
+          </div>
+          </td>
+          <td>
+            <div class="container">
+              <button type="button" class="collapsible">
+              <img src="/Assets/img/Clothing(K)/kids-5.webp" alt="ADIDAS X LEGO® VIDIYO™ TEE SHIRT">
+              <div class="title"><p>ADIDAS X LEGO® VIDIYO™ TEE <br/> SHIRT</p></div>
+              <div class="price"><p>RM109</p><br></div>
+              </button>
+              <div class="content">
+                <div>
+                  <form>
+                    <label><br>Size:</label>
+                    <select id="size" name="clothingsize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="116">116</option>
+                      <option value="122">122</option>
+                      <option value="128">128</option>
+                      <option value="134">134</option>
+                      <option value="140">140</option>
+                      <option value="146">146</option>
+                      <option value="152">152</option>
+                      
+                    </select>
+                
+                  <div>
+                    <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                  </div><br>
+                  </form>
+                </div>
+              </div>       
+          </div>
+          </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-6.webp" alt="ADIDAS X CLASSIC LEGO® SHORTS">
+            <div class="title"><p>ADIDAS X CLASSIC LEGO® SHORTS</p></div>
+            <div class="price"><p><br>RM129</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-7.webp" alt="3-STRIPES TEE">
+            <div class="title"><p>3-STRIPES TEE</p></div>
+            <div class="price"><p><br/>RM119</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-8.webp" alt="ADIDAS X CLASSIC LEGO® SHORTS">
+            <div class="title"><p>ADIDAS X CLASSIC LEGO® SHORTS</p></div>
+            <div class="price"><p><br>RM109</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-9.webp" alt="LB CO GRA TEE2">
+            <div class="title"><p>LB CO GRA TEE2</p></div>
+            <div class="price"><p><br>RM69</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+          <td>
+            <div class="container">
+              <button type="button" class="collapsible">
+              <img src="/Assets/img/Clothing(K)/kids-10.webp" alt="3-STRIPES FULL-ZIP HOODIE">
+              <div class="title"><p>3-STRIPES FULL-ZIP HOODIE</p></div>
+              <div class="price"><p><br>RM209</p><br></div>
+              </button>
+              <div class="content">
+                <div>
+                  <form>
+                    <label><br>Size:</label>
+                    <select id="size" name="clothingsize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="116">116</option>
+                      <option value="122">122</option>
+                      <option value="128">128</option>
+                      <option value="134">134</option>
+                      <option value="140">140</option>
+                      <option value="146">146</option>
+                      <option value="152">152</option>
+                      
+                    </select>
+                 
+                  <div>
+                    <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                  </div><br>
+                  </form>
+                </div>
+              </div>       
+          </div>
+          </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-11.webp" alt="REAL MADRID MARVEL AVENGERS JERSEY">
+            <div class="title"><p>REAL MADRID MARVEL AVENGERS <br/> JERSEY</p></div>
+            <div class="price"><p>RM319</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-12.webp" alt="BIG KIDS LIL STRIPE GRAPHIC TEE">
+            <div class="title"><p>BIG KIDS LIL STRIPE GRAPHIC TEE</p></div>
+            <div class="price"><br>RM99</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-13.webp" alt="ADIDAS X LEGO® VIDIYO™ TEE LONGSLEEVE">
+            <div class="title"><p>ADIDAS X LEGO® VIDIYO™ <br/> TEE LONGSLEEVE</p></div>
+            <div class="price"><p>RM109</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-14.webp" alt="STUDIO LOUNGE BOTANICAL DYE SPORT SHORTS">
+            <div class="title"><p>STUDIO LOUNGE BOTANICAL DYE<br/> SPORT SHORTS</p></div>
+            <div class="price"><p>RM119</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-15.webp" alt="ADIDAS X LEGO® VIDIYO™ BOMBER JACKET">
+            <div class="title"><p>ADIDAS X LEGO® VIDIYO™ BOMBER<br/> JACKET</p></div>
+            <div class="price"><p>RM279</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-16.webp" alt="ADICOLOR TEE">
+            <div class="title"><p>ADICOLOR TEE</p></div>
+            <div class="price"><p><br>RM109</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-17.webp" alt="ADICOLOR SHORTS AND TEE SET">
+            <div class="title"><p>ADICOLOR SHORTS AND TEE SET</p></div>
+            <div class="price"><p><br>RM139</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+              
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-18.webp" alt="STUDIO LOUNGE BOTANICAL DYE SPORT CREW SWEATSHIRT">
+            <div class="title"><p>STUDIO LOUNGE BOTANICAL DYE <br/> SPORT CREW SWEATSHIRT</p></div>
+            <div class="price"><p>RM179</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+               
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-19.webp" alt="3-STRIPES PANTS">
+            <div class="title"><p>3-STRIPES PANTS</p></div>
+            <div class="price"><p><br>RM159</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+               
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+            <button type="button" class="collapsible">
+            <img src="/Assets/img/Clothing(K)/kids-20.webp" alt="LG COTTON TEE">
+            <div class="title"><p>LG COTTON TEE</p></div>
+            <div class="price"><p><br>RM69</p><br></div>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                  <select id="size" name="clothingsize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="116">116</option>
+                    <option value="122">122</option>
+                    <option value="128">128</option>
+                    <option value="134">134</option>
+                    <option value="140">140</option>
+                    <option value="146">146</option>
+                    <option value="152">152</option>
+                    
+                  </select>
+               
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+      </tr>
+
+    </table>  
+
+    <div class="center">
+      <div class="pagination">
+        <a href="/HTML/kclothing.html">&laquo;</a>
+        <a href="/HTML/kclothing.html" class="active">1</a>
+        <a href="/HTML/kclothing.html">&raquo;</a>
+      </div>
+    </div>
+
+    <footer>
+      <img src="/Assets/img/social media icon.png" alt="social_media" usemap="#mediamap" />
+      <map id="mediamap" name="mediamap">
+        <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="#" />
+        <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="#" />
+        <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="#" />
+        <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="#" />
+        <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="#" />
+        <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="#" />
+      </map>
+      <div class="contact">
+        <br>
+        Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+        </div>
+        <br>
+        <br>
+        SportoSense &copy; All rights reserved
+        <br><br>
+    </footer>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+      
+
+</body>
+</html>

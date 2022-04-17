@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQ</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/Assets/css/FAQ.css">
+        <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+    </head>
+
+    <body>
+      <header>
+     
+        <a href="/HTML/index.html"><img src="/Assets/img/Index/SportoSense.png" alt="SportoSense Logo" /></a>
+        <div class="right" >
+          <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+            <br/><br/>
+            <a href="/HTML/cart.html"><img src="/Assets/img/Index/addtocart logo.jpg" alt="cart" /><span class="cartnum">0</span></a>
+            <a href="/HTML/wishlist.html"><img src="/Assets/img/Index/wishlist_logo.png" alt="wishlist" /></a>
+        </div>
+    
+        <nav>
+          <div class="navbar">
+              <ul>
+                <li><a href="/HTML/index.html">Home</a></li>
+                <li><a href="/HTML/aboutus.html">About Us</a></li>
+                  <div class="dropdown">
+                      <button class="button">
+                        <li><a href="/HTML/products.html">Products</a></li> 
+                      </button>
+                      <div class="dropdown-content">
+                        <ul>
+                          <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                          <li><a href="ShoesP1(M).html">Men</a></li>
+                          <li><a href="ShoesP1(W).html">Women</a></li>
+                          <li><a href="ShoesP1(K).html">Kids</a></li>
+                        </ul>
+                        <ul>
+                          <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                          <li><a href="/HTML/mclothing.html">Men</a></li>
+                          <li><a href="/HTML/wclothing.html">Women</a></li>
+                          <li><a href="/HTML/kclothing.html">Kids</a></li>
+                        </ul>
+                      <ul>
+                        <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                    </ul>
+                    </div>
+                  </div>
+                <li><a href="/HTML/Promotion.html">Promotion</a></li>
+                <li><a href="/HTML/Membership.html">Membership</a></li>
+              </ul>
+          </div>
+        </nav>
+        </header>
+    <br>
+        <img src="/Assets/img/FAQ/FAQ.png" alt="FAQ" class="FAQ"/> <br>
+        <div class="wholetab">
+            <button class="tablink" onclick="openPage('product', this, '#8ACBF0')">Product</button>
+            <button class="tablink" onclick="openPage('order', this, '#8ACBF0')" id="defaultOpen">Ordering & Payment</button>
+            <button class="tablink" onclick="openPage('shipping', this, '#8ACBF0')">Shipping & Delivery</button>
+            <button class="tablink" onclick="openPage('return', this, '#8ACBF0')">Return & Cancellation</button>
+
+            <div id="product" class="tabcontent">
+                <button class="accordion">How Reliable Is Product Availability?</button>
+                <div class="panel">
+                  <p>Our website automatically updates each time an item is sold, so you can be confident that if an item is displayed on the site, it's highly unlikely it won't be in stock. In the very rare event that your product isn't in stock, we'll contact you immediately..</p>
+                </div>
+
+                <button class="accordion">Are Your Products Displayed In UK Sizes?</button>
+                <div class="panel">
+                  <p>Yes, we display all products in UK sizes.</p>
+                </div>
+
+                <button class="accordion">I'm New To Running And Need Some Help Choosing My Product</button>
+                <div class="panel">
+                  <p>Please contact us through phone, email or the social media platform below for more detailed assistance.</p>
+                </div>
+
+                <button class="accordion">Are your products safe?</button>
+                <div class="panel">
+                  <p>All our materials and product samples must pass standardized tests regarding biological and chemical safety. We use certain material specifications and procedures to ensure product quality as well as consumer-safety. With rigid compliance processes and updates we also want to ensure our consistent improvement in this area.</p>
+                </div>
+
+                <button class="accordion">What can I do about an product I bought that is defective?</button>
+                <div class="panel">
+                  <p>If you are dissatisfied with the quality of your adidas product, please contact your adidas retailer or online shop. There, your claim will be discussed competently with you and, if the claim is justified, the purchased item will be replaced. It is our aim to help you in a fast and uncomplicated way if you have a justified claim.</p>
+                </div>
+            </div>
+
+            <div id="order" class="tabcontent">
+                <button class="accordion">Can I cancel or change my order?</button>
+                <div class="panel">
+                  <p>You can't make changes, but you can cancel an order within 30 minutes of placing it.</p>
+                </div>
+
+                <button class="accordion">Will I Receive An Order Confirmation?</button>
+                <div class="panel">
+                  <p>If you place your order online, we'll send an email confirmation. It's important that you check all the details carefully to make sure everything on your order is correct.</p>
+                </div>
+
+                <button class="accordion">I'm Trying To Order Online, But My Credit/Debit Card Isn't Being Accepted.</button>
+                <div class="panel">
+                  <p>First of all make sure that your billing details match those on your card statement exactly. If you're still having problems, give us a call and we'll try and find out what the problem is. Be wary of attempting submit your order too many times as your card issuer might automatically cancel your card.</p>
+                </div>
+
+                <button class="accordion">What Payment Methods Do You Accept?</button>
+                <div class="panel">
+                  <p>We accept Visa (including Visa Delta) Mastercard, Switch / Maestro, and Electron cards. Online, we can also accept payment via PayPal. For orders placed via post we also accept cheque and postal orders.</p>
+                </div>
+
+                <button class="accordion">How do I know if my order is processed?</button>
+                <div class="panel">
+                  <p>You will receive an order confirmation email when your order has been processed. This confirms that your order has been placed successfully.</p>
+                </div>
+            </div>
+
+            <div id="shipping" class="tabcontent">
+                <button class="accordion">What should I do if I received the wrong product(s)?</button>
+                <div class="panel">
+                  <p>If you placed your order from our online shop and received the wrong product, please kindly contact us for further assistance.</p>
+                </div>
+
+                <button class="accordion">How do I track my order or delivery status?</button>
+                <div class="panel">
+                  <p>Once your order has been dispatched from our warehouse you will receive a shipping confirmation email with your tracking number and link to track your order online. You will then be able to to track your order via the online tracker. There may be some delay between the status of an order being updated on the website, however the carrier usually updates their information within one business day. Tracking information should be available as soon as you receive this email however, please note that until the carrier updates their system with your tracking information, you will be unable to track your order.</p>
+                </div>
+
+                <button class="accordion">Why is my order late?</button>
+                <div class="panel">
+                  <p>We always aim to deliver your order within our standard delivery times, but sometimes unexpected factors can cause delays in your delivery.<br>
+                    Here are some reasons your delivery might be late:<br>
+                    - Your order was shipped during our sales and promotions season.<br>
+                    - You ordered more than one product. In exceptional circumstances your order may arrive in different packages and on different dates.<br></ul>
+                    - Your order was placed during a local public holiday.<br>
+                    - There were unpredictable circumstances beyond our control.<br>
+                    Do you want to find out the current delivery status of your order? You can easily track the status of your order with tracking number in shipping confirmation email.</p>
+                </div>
+
+                <button class="accordion">What should I do if my order is marked as delivered but I didn’t receive it?</button>
+                <div class="panel">
+                  <p>For the fastest service, please contact the carrier directly. Sometimes carrier tracking information updates prematurely, and your package could be delivered within 24 hours. If it’s still before your estimated delivery date, please hold tight, your package is on the way. If it’s after your estimated delivery date, please contact the carrier for more information.</p>
+                </div>
+
+                <button class="accordion">Why was only part of my order delivered?</button>
+                <div class="panel">
+                  <p>If you order multiple items, you may get multiple deliveries. We’ll send you a shipping confirmation email for each shipment, so you’ll know exactly what to expect and when to expect it.</p>
+                </div>
+            </div>
+
+            <div id="return" class="tabcontent">
+                <button class="accordion">How do I return my order?</button>
+                <div class="panel">
+                  <p>As outlined in the latest covid operations guideline, please be advised that our warehouse is operating based on allowed capacity. A shipping delay may happen especially during peak shopping or promo period. Rest assured we are trying our best to process your orders. For West Malaysia customers, orders will be estimated delivered within 14 working days, whereas East Malaysia customers can expect to receive orders within 21 working days. We thank you for your patience and kind understanding during this period.<br>
+                    <br>
+                    You will have 2 return options:<br><br>
+                    1. Return via Postal Service (postage by consumer)<br>
+                    2. Return in one of our own Retail Store<br><br>
+                    To ensure the safety of our employees as well as consumers, only fully vaccinated customers are allowed in-store (after 14-days for Pfizer, AZ, Sinovac, and after 28 days for J&J and CanSino). Please present your MySejahtera as proof.
+                    </p>
+                </div>
+
+                <button class="accordion">How do I get my refund after return or cancellation?</button>
+                <div class="panel">
+                  <p>We'll refund your item via your original payment method except in the case of payment by cash or postal order where we will refund you by cheque.
+                    We try our best to process all refunds within 24 hours of receipt, however during busy periods allow 7 working days for your refund.
+                    When we've completed your refund, we'll send you an email to let you know.
+                    Please note: Gift wrapping is non-refundable
+                    We will (where applicable) refund reasonable postage costs up to the value of £4.99 if there is a fault found with an item. (Terms and Conditions apply. Any refunds will be made after goods have been received and inspected. Proof of postage required.)</p>
+                </div>
+
+                <button class="accordion">What happens to my voucher if I reeturn my order or if (part of) my order is cancelled?</button>
+                <div class="panel">
+                  <p>Promotion codes do not apply to sale products. If you return an order where a promotion code has been used, the value of the code will not be refunded. The voucher code will not be replaced. Promotion codes are only valid within a certain time. Should you encounter any problems with using a code, please contact our customer service. Our advisors are happy to assist you.</p>
+                </div>
+              </div>
+            <p style="text-align:center;">Other questions? Contact us at:<a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a></p><br><br>
+        </div>
+        
+        
+        <script src="/Assets/javascript/FAQ.js"></script>
+
+        <footer>
+          <img src="/Assets/img/Index/social media icon.png" alt="social_media" usemap="#mediamap" />
+          <map id="mediamap" name="mediamap">
+            <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+            <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="instagram" />
+          <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snapchat" />
+          <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+          <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp" />
+          <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin" />
+          </map>
+          <div class="contact">
+            <br>
+            Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+            </div>
+            <br>
+            <br>
+            SportoSense &copy; All rights reserved
+            <br><br>
+        </footer>
+    </body>
+    
+</html>

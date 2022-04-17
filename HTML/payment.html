@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>Payment</title>
+   <meta charset="utf-8" />
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="/Assets/css/layout (1).css">
+   <link rel="stylesheet" href="/Assets/css/payment.css">
+  
+   
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="loginpage.html">Login</a> | <a href="SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="cart.html"><img src="/Assets/img/AboutUs/addtocart logo.jpg" alt="cart" />          
+        <span class="cartnum">0</span>
+        </a>
+        <a href="wishlist.html"><img src="/Assets/img/AboutUs/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="dropdownbutton">
+                    <li><a href="products.html">Products</a></li> 
+                  </button>
+                  <div class="dropdown-content">
+                      <ul>
+                        <h4><a href="shoe.html">Shoes</h4>
+                        <li><a href="ShoesP1(K).html">Men</a></li>
+                        <li><a href="ShoesP1(M).html">Women</a></li>
+                        <li><a href="ShoesP1(W).html">Kids</a></li>
+                      </ul>
+                      <ul>
+                        <h4><a href="clothing.html">Clothing</h4>
+                        <li><a href="mclothing.html">Men</a></li>
+                        <li><a href="wclothing.html">Women</a></li>
+                        <li><a href="kclothing.html">Kids</a></li>
+                      </ul>
+                    <ul>
+                      <h4><a href="Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                  </ul>
+                  </div>
+              </div>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+      </div>
+  </nav>
+    
+    </header>
+
+   
+    <div class="col-payment">
+          <div class="container">
+          <form name="payment" id="payment" action="http://www.example.com/sportosense" method="post">
+      
+              <div class="row">
+                <div class="col">
+                  <h3 style="font-size: 30px;"> Credit/Debit Card Payment Details</h3>
+                  <label for="formname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <img src="/Assets/img/checkout image/Visa.jpg" alt="visa logo">
+                    <img src="/Assets/img/checkout image/Master card.png" alt="master logo">
+                  </div>
+                  
+                  <label for="name">Name on Card</label>
+                  <input type="text" id="name" name="cardname" placeholder="Lee Ah Choo" required>
+                  <label for="cardnum">Card number</label>
+                  <input type="text" id="cardnum" name="cardnumber" placeholder="1111-2222-3333-4444" pattern=".{16}" title="input only 16 digits" required>
+                  <label for="expmth">Exp Month</label>
+                  <input type="text" id="expmth" name="expmth" placeholder="09" " pattern=".{2}" title="Only 2 digits" required>
+      
+                  <div class="row">
+                    <div class="col">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="18" pattern=".{2}" title="Only 2 digits" required>
+                    </div>
+                    <div class="col">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="123" pattern=".{3}" title="Only 3 digits" required>
+                    </div>
+                  </div>
+                </div>
+
+             
+          
+              <input type="submit" value="Confirm payment" class="btn">
+            </form>
+            <script src="/Assets/javascript/payment.js"></script>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <img src="/Assets/img/AboutUs/social media icon.png" alt="social_media" usemap="#mediamap" />
+  <map id="mediamap" name="mediamap">
+    <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+    <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="insta" />
+    <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snap" />
+    <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+    <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp" />
+    <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin" />
+  </map>
+  <div class="contact">
+    <br>
+    Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+    </div>
+    <br>
+    <br>
+    SportoSense &copy; All rights reserved
+    <br><br>
+</footer>
+
+</html>

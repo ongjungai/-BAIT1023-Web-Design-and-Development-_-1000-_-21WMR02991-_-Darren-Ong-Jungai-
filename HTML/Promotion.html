@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>Promotion</title>
+   <meta charset="utf-8" />
+   <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+   <link rel="stylesheet" href="/Assets/css/HeaderFooter.css">
+   <link rel="stylesheet" href="/Assets/css/Promotion.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html"><img src="/Assets/img/addtocart logo.jpg" alt="cart" /></a> <span class="cartnum">0</span>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="button">
+                    <li><a href="/HTML/products.html">Products</a></li> 
+                  </button>
+                  <div class="dropdown-content">
+                    <ul>
+                      <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                      <li><a href="Shoes(M).html">Men</a></li>
+                      <li><a href="Shoes(W).html">Women</a></li>
+                      <li><a href="Shoes(K).html">Kids</a></li>
+                    </ul>
+                    <ul>
+                      <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                      <li><a href="/HTML/mclothing.html">Men</a></li>
+                      <li><a href="/HTML/wclothing.html">Women</a></li>
+                      <li><a href="/HTML/kclothing.html">Kids</a></li>
+                    </ul>
+                  <ul>
+                    <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                </ul>
+                </div>
+              </div>
+            <li><a href="/HTML/promotion.html">Promotion</a></li>
+            <li><a href="/HTML/membership.html">Membership</a></li>
+          </ul>
+      </div>
+    </nav>
+    </header>
+    
+    <!--SLIDE SHOW-->
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        bottom: 20px;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        border-color: #bbb;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="/Assets/img/Promotion/promotion01.png" width="1518" height="350">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="/Assets/img/Promotion/promotion02.jpg" width="1518" height="350">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="/Assets/img/Promotion/promotion03.jpg" width="1518" height="350">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      <!--SLIDE SHOW END-->
+
+<!--PRODUCTS-->
+    <h1>Promotion:</h1>
+
+    <table style = "display:flex;justify-content: center;">
+      <tr>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/12. Ultraboost 21 X Parley Shoe(3).png" alt="Ultraboost 21 X Parley Shoe(3)">
+            <br>
+            <div class="title"><p>Ultraboost 21 X Parley Shoe</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM869</s> RM609 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="UK 6">UK 6</option>
+                <option value="UK 7">UK 7</option>
+                <option value="UK 8">UK 8</option>
+                <option value="UK 9">UK 9</option>
+                <option value="UK 10">UK 10</option>
+                <option value="UK 11">UK 11</option>
+                <option value="UK 12">UK 12</option>
+                <option value="UK 13">UK 13</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/(2)3-STRIPES TOUR HAT.png" alt="3-STRIPES TOUR HAT">
+            <br>
+            <div class="title"><p>3-STRIPES TOUR HAT</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM119</s> RM96 (20% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/(11) CADDIE BAG.png" alt="CADDIE BAG">
+            <br>
+            <div class="title"><p>CADDIE BAG</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM1,299</s> RM910 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/19. Ultraboost 21 Shoe(3).png" alt="Ultraboost 21 Shoe(3)">
+            <br>
+            <div class="title"><p>Ultraboost 21 Shoes</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM799</s> RM559 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="UK 6">UK 6</option>
+                <option value="UK 7">UK 7</option>
+                <option value="UK 8">UK 8</option>
+                <option value="UK 9">UK 9</option>
+                <option value="UK 10">UK 10</option>
+                <option value="UK 11">UK 11</option>
+                <option value="UK 12">UK 12</option>
+                <option value="UK 13">UK 13</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/(5) ADIDAS SPORT DUFFEL BAG.png" alt="ADIDAS SPORT DUFFEL BAG">
+            <br>
+            <div class="title"><p>ADIDAS SPORT DUFFEL BAG</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM219</s> RM66 (70% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/clothing_9.png" alt="ADIDAS LIGHTNING TRACK PANTS">
+            <br>
+            <div class="title"><p>ADIDAS LIGHT TRACK PANTS</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM329</s> RM230 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2XL">2XL</option>
+                <option value="3XL">3XL</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/clothing_13.png" alt="OZTRADAMUS WINDBREAKER">
+            <br>
+            <div class="title"><p>OZTRADAMUS WINDBREAKER</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM469</s> RM329 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2XL">2XL</option>
+                <option value="3XL">3XL</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/23. Ultraboost 21 Shoe(2).png" alt="Ultraboost 21 Shoe(2)">
+            <br>
+            <div class="title"><p>Ultraboost 21 Shoes</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM799</s> RM559 (30% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="UK 6">UK 6</option>
+                <option value="UK 7">UK 7</option>
+                <option value="UK 8">UK 8</option>
+                <option value="UK 9">UK 9</option>
+                <option value="UK 10">UK 10</option>
+                <option value="UK 11">UK 11</option>
+                <option value="UK 12">UK 12</option>
+                <option value="UK 13">UK 13</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/(9) BADGE OF SPORT VISOR.png" alt="BADGE OF SPORT VISOR">
+            <br>
+            <div class="title"><p>BADGE OF SPORT VISOR</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM89</s> RM72 (20% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+        <td>
+          <div class="container">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Promotion/(23) TOUR BOSTON BAG.png" alt="TOUR BOSTON BAG">
+            <br>
+            <div class="title"><p>TOUR BOSTON BAG</p></div>
+            <br>
+            <div class="price"><p style="color:rgb(38, 218, 38);"><s style="color: black;">RM569</s> RM456 (20% OFF)</p></div>
+            <br>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="">--Please Select--</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+             </div><br>
+            </form>
+            </div>
+          </div>       
+        </div>
+        </td>
+      </tr>
+    </table>  
+
+    <div class="center">
+      <div class="pagination">
+        <a href="Promotion.html">&laquo;</a>
+        <a href="Promotion.html" class="active">1</a>
+        <a href="Promotion.html">&raquo;</a>
+      </div>
+    </div>
+
+    <footer>
+      <img src="/Assets/img/social media icon.png" alt="social_media" usemap="#mediamap" />
+      <map id="mediamap" name="mediamap">
+        <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+        <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="instagram" />
+        <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snapchat" />
+        <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+        <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp"/>
+        <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin"/>
+      </map>
+      <div class="contact">
+        <br>
+        Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+        </div>
+        <br>
+        <br>
+        SportoSense &copy; All rights reserved
+        <br><br>
+    </footer>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+</body>
+</html>
