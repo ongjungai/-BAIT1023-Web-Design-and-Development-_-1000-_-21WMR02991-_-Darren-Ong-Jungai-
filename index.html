@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SportoSense</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/Assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="png" href="/Assets/img/SportoSense (1).png">
+</head>
+<body>
+  <header>
+     
+    <a href="/HTML/index.html"><img src="/Assets/img/Index/SportoSense.png" alt="SportoSense Logo" /></a>
+    <div class="right" >
+      <a href="/HTML/loginpage.html">Login</a> | <a href="/HTML/SignUp.html">SignUp</a>
+        <br/><br/>
+        <a href="/HTML/cart.html"><img src="/Assets/img/Index/addtocart logo.jpg" alt="cart" /><span class="cartnum">0</span></a>
+        <a href="/HTML/wishlist.html"><img src="/Assets/img/Index/wishlist_logo.png" alt="wishlist" /></a>
+    </div>
+
+    <nav>
+      <div class="navbar">
+          <ul>
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/aboutus.html">About Us</a></li>
+              <div class="dropdown">
+                  <button class="button">
+                    <li><a href="/HTML/products.html">Products</a></li> 
+                  </button>
+                  <div class="dropdown-content">
+                    <ul>
+                      <h4><a href="/HTML/shoe.html">Shoes</a></h4>
+                      <li><a href="ShoesP1(M).html">Men</a></li>
+                      <li><a href="ShoesP1(W).html">Women</a></li>
+                      <li><a href="ShoesP1(K).html">Kids</a></li>
+                    </ul>
+                    <ul>
+                      <h4><a href="/HTML/clothing.html">Clothing</a></h4>
+                      <li><a href="/HTML/mclothing.html">Men</a></li>
+                      <li><a href="/HTML/wclothing.html">Women</a></li>
+                      <li><a href="/HTML/kclothing.html">Kids</a></li>
+                    </ul>
+                  <ul>
+                    <h4><a href="/HTML/Accessories.html" style="padding: 20px;">Accessories</a></h4>
+                </ul>
+                </div>
+              </div>
+            <li><a href="/HTML/Promotion.html">Promotion</a></li>
+            <li><a href="/HTML/Membership.html">Membership</a></li>
+          </ul>
+      </div>
+    </nav>
+    </header>
+
+
+  <div class="welcome">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/Assets/img/Index/home01.jpg" style="width:100%">
+          <div class="text">Welcome to SportoSense</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="/Assets/img/Index/home02.jpg" style="width:100%">
+          <div class="text">Welcome to SportoSense</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="/Assets/img/Index/home03.jpg" style="width:100%">
+          <div class="text">Welcome to SportoSense</div>
+        </div>
+      </div>
+      <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+        <script src="/Assets/javascript/index.js"></script>
+  </div>
+  <br>
+  <div class="promotion">
+    <h2>PROMOTION</h2>
+    <p style="font-size: 20px;text-align: right; margin-right: 50px;"><a href="Promotion.html">See More</a></p>
+    <div class="row">
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/23. Ultraboost 21 Shoe(2).png" alt="Ultraboost 21">
+          <p>Ultraboost 21 Shoes</p>
+          <p><s>RM799</s></p> <p style="color:rgb(38, 218, 38);">RM559 (30% OFF)</p>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+                <label><br>Size:</label>
+                  <select id="size" name="shoesize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="UK 6">UK 6</option>
+                    <option value="UK 7">UK 7</option>
+                    <option value="UK 8">UK 8</option>
+                    <option value="UK 9">UK 9</option>
+                    <option value="UK 10">UK 10</option>
+                    <option value="UK 11">UK 11</option>
+                    <option value="UK 12">UK 12</option>
+                    <option value="UK 13">UK 13</option>
+                  </select>
+              <div>
+                <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+              </div><br>
+              </form>
+            </div>
+          </div>       
+      </div>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/(11) CADDIE BAG.png" alt="CADDIE BAG">
+          <p>CADDIE BAG</p>
+          <p><s>RM1,299</s></p> <p style="color:rgb(38, 218, 38);">RM910 (30% OFF)</p>
+          </button>
+          <div class="content">
+            <div><form>
+              <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="Standard">Standard</option>>
+              </select>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+            </div><br>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/(2)3-STRIPES TOUR HAT.png" alt="3-STRIPES TOUR HAT">
+          <p>3-STRIPES TOUR HAT</p>
+          <p><s>RM119</s></p> <p style="color:rgb(38, 218, 38);">RM96 (20% OFF)</p>
+          </button>
+          <div class="content">
+            <div><form>
+              <label><br>Size:</label>
+                <select id="size" name="itemsize" style="width: 100%;">
+                  <option value="Standard">Standard</option>>
+                </select>
+               <div>
+                <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+              </div><br></form>
+            </div>
+        </div>
+      </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="column">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Index/19. Ultraboost 21 Shoe(3).png" alt="Ultraboost 21 Shoe 3">
+            <p>Ultraboost 21 Shoes</p>
+            <p><s>RM799</s></p> <p style="color:rgb(38, 218, 38);">RM559 (30% OFF)</p>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                    <select id="size" name="shoesize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="UK 6">UK 6</option>
+                      <option value="UK 7">UK 7</option>
+                      <option value="UK 8">UK 8</option>
+                      <option value="UK 9">UK 9</option>
+                      <option value="UK 10">UK 10</option>
+                      <option value="UK 11">UK 11</option>
+                      <option value="UK 12">UK 12</option>
+                      <option value="UK 13">UK 13</option>
+                    </select>
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+
+        <div class="column">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Index/(5) ADIDAS SPORT DUFFEL BAG.png" alt="ADIDAS SPORT DUFFEL BAG">
+            <p>ADIDAS SPORT DUFFEL BAG</p>
+            <p><s>RM219</s></p> <p style="color:rgb(38, 218, 38);">RM66 (70% OFF)</p>
+            </button>
+            <div class="content">
+              <div><form>
+                <label><br>Size:</label>
+              <select id="size" name="itemsize" style="width: 100%;">
+                <option value="Standard">Standard</option>>
+              </select>
+             <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+            </div><br></form>
+          </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <button type="button" class="collapsible">
+            <img src="/Assets/img/Index/12. Ultraboost 21 X Parley Shoe(3).png" alt="Ultraboost 21 X Parley Shoe(3)">
+            <p>Ultraboost 21 X Parley Shoe</p>
+            <p><s>RM869</s></p> <p style="color:rgb(38, 218, 38);">RM609 (30% OFF)</p>
+            </button>
+            <div class="content">
+              <div>
+                <form>
+                  <label><br>Size:</label>
+                    <select id="size" name="shoesize" style="width: 100%;" required>
+                      <option value="">--Please Select--</option>
+                      <option value="UK 6">UK 6</option>
+                      <option value="UK 7">UK 7</option>
+                      <option value="UK 8">UK 8</option>
+                      <option value="UK 9">UK 9</option>
+                      <option value="UK 10">UK 10</option>
+                      <option value="UK 11">UK 11</option>
+                      <option value="UK 12">UK 12</option>
+                      <option value="UK 13">UK 13</option>
+                    </select>
+                <div>
+                  <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                  <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+                </div><br>
+                </form>
+              </div>
+            </div>       
+        </div>
+      </div>
+      </div>
+<br>
+  <div class="new-arrivals">
+    <h2>NEW ARRIVALS</h2>
+    <div class="row">
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/(17) MINI BACKPACK.png" alt="Mini Backpack">
+          <p>Mini Backpack</p>
+          <p>RM229</p>
+          </button>
+          <div class="content">
+            <div><form>
+              <label><br>Size:</label>
+            <select id="size" name="itemsize" style="width: 100%;">
+              <option value="Standard">Standard</option>>
+            </select>
+            <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+            </div><br></form>
+        </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/9. Ultraboost 21 X Parley Shoe(1).png" alt="Ultraboost 21 X Parley Shoe(1)">
+          <p>Ultraboost 21 X Parley Shoe</p>
+          <p>RM869</p>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+                <label><br>Size:</label>
+                  <select id="size" name="shoesize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="UK 6">UK 6</option>
+                    <option value="UK 7">UK 7</option>
+                    <option value="UK 8">UK 8</option>
+                    <option value="UK 9">UK 9</option>
+                    <option value="UK 10">UK 10</option>
+                    <option value="UK 11">UK 11</option>
+                    <option value="UK 12">UK 12</option>
+                    <option value="UK 13">UK 13</option>
+                  </select>
+              <div>
+                <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+              </div><br>
+              </form>
+            </div>
+          </div>       
+      </div>
+      
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/(24) TREFOIL BASEBALL CAP.png" alt="TREFOIL BASEBALL CAP">
+          <p>TREFOIL BASEBALL CAP</p>
+          <p>RM89</p>
+          </button>
+          <div class="content">
+            <div><form>
+              <label><br>Size:</label>
+            <select id="size" name="itemsize" style="width: 100%;">
+              <option value="Standard">Standard</option>>
+            </select>
+           <div>
+            <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+            <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+          </div><br></form>
+        </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <div class="row">
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/25. Ultraboost 4.0 DNA Shoe(4).png" alt="Ultraboost 4.0 DNA Shoe">
+          <p>Ultraboost 4.0 DNA Shoe</p>
+          <p>RM759</p>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+                <label><br>Size:</label>
+                  <select id="size" name="shoesize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="UK 6">UK 6</option>
+                    <option value="UK 7">UK 7</option>
+                    <option value="UK 8">UK 8</option>
+                    <option value="UK 9">UK 9</option>
+                    <option value="UK 10">UK 10</option>
+                    <option value="UK 11">UK 11</option>
+                    <option value="UK 12">UK 12</option>
+                    <option value="UK 13">UK 13</option>
+                  </select>
+              <div>
+                <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+              </div><br>
+              </form>
+            </div>
+          </div>       
+      </div>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/4. Ultra4D Hurricanes Shoe(1).png" alt="Ultra4D Hurricanes Shoe">
+          <p>Ultra4D Hurricanes Shoe</p>
+          <p>RM1,099</p>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+                <label><br>Size:</label>
+                  <select id="size" name="shoesize" style="width: 100%;" required>
+                    <option value="">--Please Select--</option>
+                    <option value="UK 6">UK 6</option>
+                    <option value="UK 7">UK 7</option>
+                    <option value="UK 8">UK 8</option>
+                    <option value="UK 9">UK 9</option>
+                    <option value="UK 10">UK 10</option>
+                    <option value="UK 11">UK 11</option>
+                    <option value="UK 12">UK 12</option>
+                    <option value="UK 13">UK 13</option>
+                  </select>
+              <div>
+                <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+              </div><br>
+              </form>
+            </div>
+          </div>       
+      </div>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <img src="/Assets/img/Index/clothing_10.webp" alt="GRAPHICS Y2K TRACK PANTS">
+          <p>GRAPHICS Y2K TRACK PANTS</p>
+          <p>RM329</p>
+          </button>
+          <div class="content">
+            <div>
+              <form>
+                <label><br>Size:</label>
+                <select id="size" name="shoesize" style="width: 100%;">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="2XL">2XL</option>
+                    <option value="3XL">3XL</option>
+                </select>
+            </div>
+            <div>
+              <br><button onclick="addToCart(item1)"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+              <br><br><button onclick="addToCart(item1)">	&#x2764; Add To Wishlist</button>
+            </div><br></form>
+      </div>
+    </div>
+  </div>
+  </div><br>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+</script>
+
+<footer>
+  <img src="/Assets/img/Index/social media icon.png" alt="social_media" usemap="#mediamap" />
+  <map id="mediamap" name="mediamap">
+          <area shape="circle" coords="64, 38, 24" href="https://www.facebook.com/profile.php?id=100002116618454" alt="facebook" />
+          <area shape="circle" coords="124, 38, 24" href="https://www.instagram.com/chiuyi__s/" alt="instagram" />
+          <area shape="circle" coords="184, 38, 24" href="https://www.snapchat.com/" alt="snapchat" />
+          <area shape="circle" coords="64, 94, 24" href="https://twitter.com/chiuyi0531" alt="twitter" />
+          <area shape="circle" coords="124, 94, 24" href="https://web.whatsapp.com/" alt="whatsapp" />
+          <area shape="circle" coords="184, 94, 24" href="https://www.linkedin.com/login" alt="linkedin" />
+  </map>
+  <div class="contact">
+    <br>
+    Contact Us: <a href="tel:+011-78530510">+011-78530510</a> | <a href="mailto:sportosense@gmail.com">sportosense@gmail.com</a> | <a href="FAQ.html">FAQ</a>
+    </div>
+    <br>
+    <br>
+    SportoSense &copy; All rights reserved
+    <br><br>
+</footer>
+
+</body>
+</html>
